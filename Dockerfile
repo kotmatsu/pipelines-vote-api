@@ -1,4 +1,4 @@
-FROM image-registry.openshift-image-registry.svc:5000/openshift/golang:1.18-ubi9 as builder
+FROM registry.access.redhat.com/ubi9/go-toolset:1.18 as builder
 
 WORKDIR /build
 ADD . /build/
